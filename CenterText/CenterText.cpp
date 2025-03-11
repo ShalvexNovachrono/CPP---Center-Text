@@ -1,6 +1,3 @@
-
-//// This program will print the text in the center of the line of characters
-
 #include <iostream>
 #include <string>
 using namespace std;
