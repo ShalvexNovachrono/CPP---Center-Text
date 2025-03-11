@@ -11,7 +11,7 @@ using namespace std;
 /// <param name="character"></param>
 /// <param name="length"></param>
 void RepeatPrintThisCharacter(char character, int length) {
-	for (int i = 0; i < length; i++) {
+	for (size_t i = 0; i < length; i++) {
 		cout << character;
 	}
 }
@@ -35,7 +35,7 @@ int main()
 	cout << "Enter text: ";
 	getline(cin, text); // This is to get the text from the user and "getline" is used because it can get the whole line of text including spaces
 
-	int Length = text.length() + padding * 2; // The length of the line of characters is based on the length of the text and the padding which is in the front and at the back of the text
+	size_t Length = text.length() + padding * 2; // The length of the line of characters is based on the length of the text and the padding which is in the front and at the back of the text
 
 	RepeatPrintThisCharacter('*', Length);
 	cout << endl; // This is to make the text in the center of the line because this method/function "RepeatPrintThisCharacter" does not print new line after printing the line of characters
